@@ -13,3 +13,38 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+.all h1{
+
+  font-size: 18px;
+  font-weight: bold;
+
+
+}
+
+.all h2 {font-weight: 500;
+  line-height:2em;
+  font-size: 15px;
+  color: #7d7d7d;
+  margin: 0px;
+   }
+.all{
+
+}
+
+.card-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 77px;
+  margin: 15px 0px;
+}

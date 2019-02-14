@@ -1,8 +1,19 @@
-<h1>my restaurants</h1>
-<% @restaurants.each do |restaurant| %>
-<li class="display">
-  <h2><%=link_to restaurant.name, restaurant_path(restaurant) %></h2>
-</li>
-<% end %>
-<%= link_to "add restaurant", new_restaurant_path  %>
-
+<div class="all container">
+  <h1>my restaurants</h1>
+  <div class="card">
+    <div class="row">
+      <%= link_to "add restaurant", new_restaurant_path, class:"btn btn-primary" %>
+      <% @restaurants.each do |restaurant| %>
+      <div class="col-xs-6 ">
+        <ul class="list-group">
+          <li class="list-group-item"" >
+            <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('images/shanghai.jpg');">
+              <h2><%=link_to restaurant.name, restaurant_path(restaurant)%> </h2>
+            </div>
+          </li >
+        </ul>
+      </div>
+    </div>
+      <% end %>
+  </div>
+</div>
